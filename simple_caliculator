@@ -1,0 +1,32 @@
+print("  SIMPLE CALICULATOR  ")
+num1=int(input("enter the vlaue of 1st number "))
+num2=int(input("enter the value of 2nd number "))
+def numbers(num1,num2):
+    add=num1+num2
+    sub=num1-num2
+    mult=num1*num2
+    div=num1/num2
+    if num1<num2:
+        print("here 1st number is greater than 2nd number so only add and mult is possible to avoid errors")
+        operator1=input("enter the operator ")
+        if operator1=="add":
+            print(add)
+        elif operator1=="sub":
+            print("please read above lines clearly than try again")
+        elif operator1=="mult":
+            print(mult)
+        else:
+            print("please read above lines clearly than try again")
+    else:
+        print("choose the oerator add,sub,mult and div")
+        operator2=input("enter the operator ")
+        if operator2=="add":
+            print(add)
+        elif operator2=="sub":
+            print(sub)
+        elif operator2=="mult":
+            print(mult)
+        else:
+            print(div)
+        
+numbers(num1,num2)
